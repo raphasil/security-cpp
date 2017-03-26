@@ -27,8 +27,8 @@ Furthermore, the class defines the following services :
 
 #### Example
 
-`
 
+```cpp
 string txt = "Hello world";
 string output;
 vector<unsigned char> input(a.begin(), a.end());
@@ -36,8 +36,7 @@ vector<unsigned char> revinput;
 
 encoder::base64().encode_to(input, output);
 encoder::base64().decode_to(output, revinput);
-
-`
+```
 
 ### Class encoder::hex
 This class inherits basic_encoder<I,O>, with I = std ::vector<unsigned char> and O = std ::string.
@@ -48,8 +47,7 @@ Furthermore, the class defines the following services :
 
 #### Example
 
-`
-
+```cpp
 string txt = "Hello world";
 string output;
 vector<unsigned char> input(a.begin(), a.end());
@@ -57,8 +55,7 @@ vector<unsigned char> revinput;
 
 encoder::hex().encode_to(input, output);
 encoder::hex().decode_to(output, revinput);
-
-`
+```
 
 ## namespace ph::security
 
