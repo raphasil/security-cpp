@@ -1,0 +1,25 @@
+ifndef WORKDIR
+WORKDIR = `pwd`
+endif
+
+CXX = g++ 
+#CXX = colorgcc -std=c++98 -lstdc++
+CP = cp
+RM = rm -f
+RMDIR = rm -rf
+MKDIR = mkdir
+MKDIR_ALL = mkdir -p
+MAKE = make WORKDIR=$(WORKDIR)
+MAKELIB = ar -r
+MAKEDEPEND = makedepend -Y
+
+BASEOBJDIR = $(WORKDIR)/build/.objs
+
+OPTIMFLAGS = -O3
+
+INSTALLDIR = $(WORKDIR)/build/
+
+libdir = $(INSTALLDIR)/lib/
+incdir = $(INSTALLDIR)/include/
+datadir = $(INSTALLDIR)/data/
+
